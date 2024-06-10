@@ -1,0 +1,9 @@
+{
+  "tokenAPIHeader": {
+    "Content-Type": "application/json"
+  },
+  "tokenAPIRequest": {
+    "username": "admin",
+    "password": "password123"
+  }
+}

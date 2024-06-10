@@ -1,0 +1,26 @@
+{
+  "name": "playwrightapitestingtutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.10.6",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^2.15.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "luxon": "^3.4.4",
+    "node-fetch": "^3.3.2",
+    "playwright": "^1.44.1",
+    "request": "^2.88.2"
+  }
+}

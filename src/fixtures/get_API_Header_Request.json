@@ -1,0 +1,5 @@
+{
+  "getAPIHeader": {
+  "Content-Type": "application/json"
+  }
+}

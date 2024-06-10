@@ -1,0 +1,5 @@
+{
+  "deleteAPIHeader": {
+  "Content-Type": "application/json"
+  }
+}
