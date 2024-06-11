@@ -3,7 +3,7 @@ const { test, expect } = require("@playwright/test");
 
 test("GET API request", async ({ request }) => {
   // Perform a GET API request
-  const getAPIResponse = await request.get("/booking/5668,", {});
+  const getAPIResponse = await request.get("/booking/1,", {});
   
   // Validate the status code of the API response
   expect(getAPIResponse.status()).toBe(200);
