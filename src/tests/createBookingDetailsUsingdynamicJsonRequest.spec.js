@@ -9,7 +9,7 @@ const dynamicRequest = require("../fixtures/dynamic_request_body.json");
 // Importing stringFormat function from a utility file
 import { stringFormat } from "../utils/stringFormatHelper"; 
 
-test("Post API request using dynamic JSON file", async ({request}) => {
+test("Create Booking Details using dynamic JSON file", async ({request}) => {
 
   // Generate dynamic test data using faker and DateTime
   const firstName = faker.person.firstName(); 

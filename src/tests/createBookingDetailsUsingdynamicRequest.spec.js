@@ -5,7 +5,7 @@ import { faker } from "@faker-js/faker";
 // Importing DateTime object from Luxon library for date manipulation
 const { DateTime } = require("luxon"); 
 
-test("POST API request using dynamic values", async ({request}) => {
+test("Create Booking Details using dynamic request", async ({request}) => {
   // Generate dynamic test data using faker-js & luxon
   const firstName = faker.person.firstName(); 
   const lastName = faker.person.lastName(); 

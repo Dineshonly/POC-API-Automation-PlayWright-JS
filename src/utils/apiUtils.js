@@ -1,7 +1,7 @@
 const { expect } = require('@playwright/test');
 
 // Post API Call
-async function postAPICall(request, url, postAPIHeaderRequest) {
+async function createBookingDetails(request, url, postAPIHeaderRequest) {
     try {
         const { postAPIHeader, postAPIRequest } = postAPIHeaderRequest;
 
@@ -32,7 +32,7 @@ async function postAPICall(request, url, postAPIHeaderRequest) {
 }
 
 // Generate Token API Call
-async function generateToken(request, url, tokenAPIHeaderRequest) {
+async function generateTokenNumber(request, url, tokenAPIHeaderRequest) {
     try {
         const { tokenAPIHeader, tokenAPIRequest } = tokenAPIHeaderRequest;
 
@@ -59,7 +59,7 @@ async function generateToken(request, url, tokenAPIHeaderRequest) {
 }
 
 // Get API Call
-async function getAPICall(request, url, bId, getAPIHeaderRequest) {
+async function getBookingDetails(request, url, bId, getAPIHeaderRequest) {
     try {
         const { getAPIHeader } = getAPIHeaderRequest;
 
@@ -80,7 +80,7 @@ async function getAPICall(request, url, bId, getAPIHeaderRequest) {
 }
 
 // Delete API Call
-async function deleteAPICall(request, url, bId, tokenNo, deleteAPIHeaderRequest) {
+async function deleteBookingDetails(request, url, bId, tokenNo, deleteAPIHeaderRequest) {
     try {
         const { deleteAPIHeader } = deleteAPIHeaderRequest;
 
@@ -104,7 +104,7 @@ async function deleteAPICall(request, url, bId, tokenNo, deleteAPIHeaderRequest)
 }
 
 // Patch API Call
-async function patchAPICall(request, url, bId, tokenNo, patchAPIHeaderRequest) {
+async function updateBookingDetailsPartially(request, url, bId, tokenNo, patchAPIHeaderRequest) {
     try {
         const { patchAPIHeader,patchAPIRequest } = patchAPIHeaderRequest;
 
@@ -129,7 +129,7 @@ async function patchAPICall(request, url, bId, tokenNo, patchAPIHeaderRequest) {
 }
 
 // Put API Call
-async function putAPICall(request, url, bId, tokenNo, putAPIHeaderRequest) {
+async function updateBookingDetails(request, url, bId, tokenNo, putAPIHeaderRequest) {
     try {
         const { putAPIHeader,putAPIRequest } = putAPIHeaderRequest;
 
@@ -153,4 +153,4 @@ async function putAPICall(request, url, bId, tokenNo, putAPIHeaderRequest) {
     }
 }
 
-module.exports = { postAPICall, generateToken, getAPICall, deleteAPICall,patchAPICall, putAPICall };
+module.exports = { createBookingDetails, generateTokenNumber, getBookingDetails, deleteBookingDetails, updateBookingDetails, updateBookingDetailsPartially };
